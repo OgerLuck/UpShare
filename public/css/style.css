@@ -1,0 +1,249 @@
+html, body {
+    background-color: #2B2B2B;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+
+nav > .container-fluid {
+    border: none;
+}
+
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.navbar-transparent {
+    background:transparent;
+    background-image: none;
+    border-color: transparent;
+}
+
+.navbar-brand, .navbar-right > li > a {
+    color: white !important;
+    font-size: 25px;
+}
+
+.main{
+    
+    width: 100%;
+    height: 100vh;
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;
+
+}
+
+.main-2{
+    background-color: rgba(0, 0, 0, 1);
+    /*background-image: url("/upflame/public/img/background/temp.jpg");*/
+    width: 100%;
+    height: 100vh;    
+    -webkit-transition: background-color 3s ease-in-out;
+    -moz-transition: background-color 3s ease-in-out;
+    -ms-transition: background-color 3s ease-in-out;
+    -o-transition: background-color 3s ease-in-out;
+    transition: background-color 3s ease-in-out;
+    opacity: 1;
+
+}
+#main-content{
+    opacity: 1 !important;
+
+}
+
+.background-desc-container {
+    position:relative;
+}
+.background-desc {
+    position:absolute;
+    bottom:0;
+    right:0;
+    color: white;
+}
+
+@media(min-width: 769px){
+    #well-form{
+        width: 20%;
+        margin-top:15%;
+    }
+}
+
+@media(max-width: 768px){
+    #well-form{
+        width: 50%;
+        margin-top:25%;
+    }
+}
+
+@media(max-width: 732px){
+    #well-form{
+        width: 75%;
+        margin-top:35%;
+    }
+}
+
+#well-form {
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+
+    opacity: 1;
+
+    /*filter: blur(1px);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: url('#blur');*/
+}
+
+#well-title{
+    margin-top: 5px !important;
+}
+
+.navbar.navbar-default {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+}
+
+.navbar.navbar-default .navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type=file] {
+    display: none !important;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    padding: 6px 12px;
+    cursor: pointer;
+    height: 100px;
+    line-height: 500%;
+}
+
+.preview-area{
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: auto;
+    max-height: 250px;
+}
+
+.preview-list{
+    background-color: rgba(52, 152, 219, 0.3);
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+.preview-list a{
+    color: black !important;
+}
+
+.preview-img{
+    width: 50px;
+    height: auto;
+}
+
+.preview-other-file {
+    width: auto;
+    height: 30px;
+}
+
+#upload-button{
+    
+}
+
+.file-name, .file-size{
+    text-decoration: none !important;
+}
+
+.file-name{
+/*    width: 150px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 15px;*/
+}
+
+.file-size{
+    float: right;
+    text-align: center;
+    margin-top: 5px;
+    margin-right:5px;
+}
+
+.file-link{
+    margin-top: 3px;
+}
+
+.glyphicon.glyphicon-ok, .glyphicon.glyphicon-remove {
+    font-size: 23px;
+    color: #3498db;
+}
+
+.loader {
+    border: 5px solid #3498db; /* Light grey */
+    border-top: 5px solid #f3f3f3; /* Blue */
+    border-right: 5px solid #f3f3f3; /* Light grey */
+    border-bottom: 5px solid #f3f3f3; /* Light grey */
+    border-left: 5px solid #f3f3f3; /* Light grey */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.footer{
+    margin: 20px 200px;
+    /*background-color: rgba(0, 0, 0, 0.7) !important;*/
+    color: rgba(229, 229, 229, 0.7);
+}
+
+#file-message{
+    height: 50px;
+    margin-bottom: 5px;
+    resize : vertical;
+}
+
+#file-cnf-btn{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.file-cnf{
+    display:none;
+}
+
+#file-cnf-exp, #file-cnf-pw{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    padding: 6px 12px;
+    margin-bottom: 5px;
+    text-align: left;
+
+}
