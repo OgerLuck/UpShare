@@ -12,7 +12,7 @@ $(document).ready(function(){
             dataType:"json",
             data: {},
             success: function(data){
-            	var image_path = "/upflame/storage/background/"+data[0]["image_path"];
+            	var image_path = "/storage/background/"+data[0]["image_path"];
             	var image = "url("+image_path+")";
             	var desc = data[0]["desc"];
                 $(".main").css("background-image", image);     
